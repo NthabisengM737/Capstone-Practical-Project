@@ -6,7 +6,7 @@ Name: Nthabiseng Mklhehlani
 
  ---
 
- ## 1. Overview
+ ## Overview
 This project simulates real-world tasks performed by an IT Support Specialist in a small business environment. It demonstrates practical skills in system setup, networking, server configuration, security implementation, and troubleshooting using a Windows-based system.
  
 ---
@@ -27,66 +27,84 @@ This project simulates real-world tasks performed by an IT Support Specialist in
 
 ---
 
+## Technologies & Tools Used
 
- ## 2. System Setup
-A Windows-based system was configured and updated to reflect a corporate IT environment. The device was renamed to IT-SUPPORT-PC01, and system specifications were verified.
+* Windows Operating System
 
----
-## 3. User Management
-Two user accounts were created:
+* Command Prompt (CLI tools)
 
-* admin_user (Administrator)
-* employee_user (Standard User)
+* Internet Information Services (IIS)
 
-Role-Based Access Control (RBAC) was implemented. Access testing confirmed that the standard user could not install software without administrator credentials.
+* Windows Defender (Firewall & Antivirus)
 
----
-## 4. Network Configuration
-Network diagnostics were performed using:
-
-* ipconfig
-* ping
-* tracert
-
-Connectivity to external servers was successfully verified, confirming proper network functionality.
+* Basic Networking Tools (ipconfig, ping, tracert)
 
 ---
-## 5. Server Setup
-A local server was configured using Internet Information Services.
 
-A custom intranet webpage was created and accessed via localhost, simulating a company internal portal.
+## Project Tasks
+
+### 1. System Setup
+* Installed and configured WIndows OS
+
+* Renamed machine to IT-SUPPORT-PC01
+
+* Verified system specifications
+
+### 2. User Management 
+* Created two users:
+  * admin_user (Administrator)
+  * employee_user (Standard User)
+* Implemented  Role-Based Access Control (RBAC) 
+* Tested restricted access for standard users
+
+ ### 3. Networking
+* Configured and verfied network settings
+
+* Performed diagnostics using:
+  * ipconfig
+  * ping
+  * tracert
+* Tested internet connectivity
+
+### 4. Server Setup
+* Installed and configured a local web server using IIS
+* Created a custom intranet webpage
+* Hosted the page on http://localhost
+
+### 5. File Sharing 
+* Created a shared folder ( C:\CompanyFiles)
+* Configured permissions:
+  * Admin: Full access 
+  * Employee: Read-only
+* Tested access control
+
+### 6. Security Implementation
+* Enabled Windows Firewall 
+* Performed antivirus scan
+* Applied strong password and access restrictions
+
+### 7. Troubleshooting 
+
+| Problem | Cause | Solution | Outcome |
+|--------|------|---------|--------|
+| No internet connectivity | IP misconfiguration or disabled network adapter | Renewed IP using `ipconfig /renew` and enabled adapter | Connection restored |
+| Access denied to shared folder | Incorrect user permissions | Updated sharing and security permissions | Access granted based on role |
+| Application installation failure | Standard user lacks admin rights | Logged in as admin_user to install software | Installation successful |
 
 ---
-## 6. File Sharing
-A shared folder was created with controlled access:
-
-* Administrator: Full access
-
-* Employee: Read-only
-
-This ensured secure file sharing within the system.
+## Network Diagram 
+A simple network diagram was created to illustrate the system setup, including the PC, router, local server, and shared resources.
 
 ---
-## 7. Security Implementation
-Security measures included:
+## What I learned 
+This project strengthened my ability to:
+* Configure and manage systems in a real-world scenario
+* Troubleshooting common IT issues effectively 
+* Implement security best practices
+* Document technical processes clearly
 
-* Enabling Windows Firewall
-
-* Running antivirus scans
-
-* Using strong passwords
-
-* Restricitng user permissions
-
----
-## 8. Troubleshooting
-Two issues were stimulated and resolved:
-* Network connectivity issue
-
-* File access restriction
-
-A structured troubleshooting approach was applied to diagnose and fix each problem.
-
---- 
-## 9. Reflection
-This project improved my practical skills in system configuration, networking, and troubleshooting. It also strengthened my ability to solve real-world IT problems in a structured and efficient manner.
+## Future Improvements 
+* Add remote access configuration 
+* Implement advanced firewall rules
+* Automate tasks using PowerShell
+* Expand server capabilities (e.g., database integration)
