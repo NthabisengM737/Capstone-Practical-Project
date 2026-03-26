@@ -1,8 +1,6 @@
-# Capstone-Practical-Project
-
-## Day in the Life of an IT Support Specialist
-Name: Nthabiseng Mklhehlani 
- Date: 20 March 2026
+# Day in the Life of an IT Support Specialist
+Name: Nthabiseng Mkhehlani 
+Date: 20 March 2026
 
  ---
 
